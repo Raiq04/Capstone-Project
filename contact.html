@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Page">
+    <meta name="author" content="Your Name">
+    <title>Contact Me - My Personal Website</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="schedule.html">Weekly Schedule</a> |
+            <a href="contact.html">Contact Me</a> |
+            <a href="questionnaire.html">Questionnaire</a>
+        </nav>
+    </header>
+
+    <section>
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="surname">Surname:</label><br>
+            <input type="text" id="surname" name="surname"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label>How did you find me?</label><br>
+            <input type="radio" name="source" value="friend"> Friend<br>
+            <input type="radio" name="source" value="internet"> Internet<br>
+            <input type="radio" name="source" value="github"> GitHub<br>
+            <input type="radio" name="source" value="other"> Other<br><br>
+
+
+            <label for="subject">Subject:</label><br>
+            <select id="subject" name="subject">
+                <option value="general">General</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="feedback">Feedback</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Raig Abdurahmanli</p>
+    </footer>
+</body>
+</html>

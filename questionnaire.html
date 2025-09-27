@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Questionairre">
+    <meta name="author" content="Questionnaire to provide feedback">
+    <title>Questionnaire - My Personal Website</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Questionnaire</h1>
+        <nav>
+            
+            <a href="index.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="schedule.html">Weekly Schedule</a> |
+            <a href="contact.html">Contact Me</a> |
+            <a href="questionnaire.html">Questionnaire</a> |
+            
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Website Feedback Questionnaire</h2>
+            <p>Please take a few moments to complete this questionnaire about my website. Your feedback is greatly appreciated! 🙏</p>
+            
+            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>General Information</legend>
+                    
+                    <label for="q-name">Your Name (optional):</label>
+                    <input type="text" id="q-name" name="q-name"><br><br>
+                    
+                    <label for="q-email">Your Email (optional):</label>
+                    <input type="email" id="q-email" name="q-email"><br><br>
+                    
+                    <label>How did you find my website?</label><br>
+                    <input type="radio" id="find-search" name="how-found" value="search">
+                    <label for="find-search">Search Engine</label><br>
+                    
+                    <input type="radio" id="find-social" name="how-found" value="social">
+                    <label for="find-social">Social Media</label><br>
+                    
+                    <input type="radio" id="find-friend" name="how-found" value="friend">
+                    <label for="find-friend">From a Friend</label><br>
+                    
+                    <input type="radio" id="find-other" name="how-found" value="other">
+                    <label for="find-other">Other</label><br><br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Website Evaluation</legend>
+                    
+                    <label>Is the website easy to navigate?</label><br>
+                    <input type="radio" id="nav-yes" name="navigation" value="yes">
+                    <label for="nav-yes">Yes</label>
+                    
+                    <input type="radio" id="nav-no" name="navigation" value="no">
+                    <label for="nav-no">No</label><br><br>
+                    
+                    <label>Which pages did you visit? (Check all that apply)</label><br>
+                    <input type="checkbox" id="page-home" name="pages-visited" value="home">
+                    <label for="page-home">Home</label><br>
+                    
+                    <input type="checkbox" id="page-education" name="pages-visited" value="education">
+                    <label for="page-education">Education</label><br>
+                    
+                    <input type="checkbox" id="page-schedule" name="pages-visited" value="schedule">
+                    <label for="page-schedule">Weekly Schedule</label><br>
+                    
+                    <input type="checkbox" id="page-contact" name="pages-visited" value="contact">
+                    <label for="page-contact">Contact Me</label><br><br>
+                    
+                    <label for="rating">Overall rating of the website:</label>
+                    <select id="rating" name="rating">
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+                    </select><br><br>
+                    
+                    <label for="improve">What could be improved?</label><br>
+                    <textarea id="improve" name="improve" rows="4" cols="50" placeholder="Your suggestions..."></textarea><br><br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Feedback</legend>
+                    
+                    <label for="frequency">How often do you visit personal websites like this?</label><br>
+                    <input type="range" id="frequency" name="frequency" min="1" max="5" list="freq-values">
+                    <datalist id="freq-values">
+                        <option value="1" label="Rarely"></option>
+                        <option value="2" label="Occasionally"></option>
+                        <option value="3" label="Sometimes"></option>
+                        <option value="4" label="Often"></option>
+                        <option value="5" label="Very Often"></option>
+                    </datalist><br><br>
+                    
+                    <label>Would you recommend this website to others?</label><br>
+                    <input type="radio" id="recommend-yes" name="recommend" value="yes">
+                    <label for="recommend-yes">Yes</label>
+                    
+                    <input type="radio" id="recommend-no" name="recommend" value="no">
+                    <label for="recommend-no">No</label>
+                    
+                    <input type="radio" id="recommend-maybe" name="recommend" value="maybe">
+                    <label for="recommend-maybe">Maybe</label><br><br>
+                    
+                    <label for="comments">Additional comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any other feedback..."></textarea><br><br>
+                </fieldset>
+                
+                <input type="submit" value="Submit Questionnaire">
+                <input type="reset" value="Clear Answers">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Raiq Abdurahmanli</p>
+    </footer>
+</body>
+</html>
