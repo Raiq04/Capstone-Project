@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #4b0865; 
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+
+
+nav {
+  background-color: #5c0099;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+nav a {
+  color: #e0b3ff;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a.active {
+  color: white;
+  background-color: #7a00cc;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+
+h1, h2, h3 {
+  color: #f3d9ff;
+}
+
+hr {
+  border: none;
+  border-top: 4px dashed #d1a3ff;
+  width: 60%;
+  margin: 20px auto;
+}
+
+img[alt*="Profile"] {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+img[alt*="Profile"]:hover {
+  width: 220px;
+  height: 220px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 2px solid #a64dff;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #4b0082;
+  color: white;
+}
+
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+
+form {
+  background-color: #4b0082;
+  padding: 15px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+input, textarea, select {
+  margin: 5px;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #7a00cc;
+  color: white;
+  cursor: pointer;
+}
+
+h2::after {
+  content: " ✨";
+}
+
+

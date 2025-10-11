@@ -1,125 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Questionairre">
-    <meta name="author" content="Questionnaire to provide feedback">
-    <title>Questionnaire - My Personal Website</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="description" content="Questionnaire">
+  <meta name="author" content="Raiq Abdurahmanli">
+  <title>Questionnaire - My Personal Website</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4b0865; 
+    color: white;
+    width: 90%;
+    margin: auto;
+  }
+
+  nav {
+    background-color: #5c0099;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+  }
+
+  nav a {
+    color: #e0b3ff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: white;
+  }
+
+  nav a.active {
+    color: white;
+    background-color: #7a00cc;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  
+  fieldset {
+    border: 2px solid #a64dff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #4b0082;
+  }
+
+  legend {
+    color: #f3d9ff;
+    font-weight: bold;
+  }
+
+  
+  .btn-purple {
+    background-color: #7a00cc;
+    color: white;
+    border: none;
+  }
+
+  .btn-purple:hover {
+    background-color: #9e00ff;
+  }
+
+  
+  .form-control, .form-select, .form-range {
+    background-color: #e8d6ff;
+    color: black;
+    border: none;
+  }
+
+  .form-control:focus, .form-select:focus {
+    box-shadow: 0 0 5px #9e00ff;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #f3d9ff;
+  }
+</style>
+
 </head>
 <body>
-    <header>
-        <h1>Questionnaire</h1>
-        <nav>
-            
-            <a href="index.html">Home</a> |
-            <a href="education.html">Education</a> |
-            <a href="schedule.html">Weekly Schedule</a> |
-            <a href="contact.html">Contact Me</a> |
-            <a href="questionnaire.html">Questionnaire</a> |
-            
-        </nav>
-    </header>
+  <header class="text-center my-3">
+    <h1>Questionnaire</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="education.html">Education</a> |
+      <a href="schedule.html">Weekly Schedule</a> |
+      <a href="contact.html">Contact Me</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="questionnaire.html" class="active">Questionnaire</a> 
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2>Website Feedback Questionnaire</h2>
-            <p>Please take a few moments to complete this questionnaire about my website. Your feedback is greatly appreciated! 🙏</p>
-            
-            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-                <fieldset>
-                    <legend>General Information</legend>
-                    
-                    <label for="q-name">Your Name (optional):</label>
-                    <input type="text" id="q-name" name="q-name"><br><br>
-                    
-                    <label for="q-email">Your Email (optional):</label>
-                    <input type="email" id="q-email" name="q-email"><br><br>
-                    
-                    <label>How did you find my website?</label><br>
-                    <input type="radio" id="find-search" name="how-found" value="search">
-                    <label for="find-search">Search Engine</label><br>
-                    
-                    <input type="radio" id="find-social" name="how-found" value="social">
-                    <label for="find-social">Social Media</label><br>
-                    
-                    <input type="radio" id="find-friend" name="how-found" value="friend">
-                    <label for="find-friend">From a Friend</label><br>
-                    
-                    <input type="radio" id="find-other" name="how-found" value="other">
-                    <label for="find-other">Other</label><br><br>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Website Evaluation</legend>
-                    
-                    <label>Is the website easy to navigate?</label><br>
-                    <input type="radio" id="nav-yes" name="navigation" value="yes">
-                    <label for="nav-yes">Yes</label>
-                    
-                    <input type="radio" id="nav-no" name="navigation" value="no">
-                    <label for="nav-no">No</label><br><br>
-                    
-                    <label>Which pages did you visit? (Check all that apply)</label><br>
-                    <input type="checkbox" id="page-home" name="pages-visited" value="home">
-                    <label for="page-home">Home</label><br>
-                    
-                    <input type="checkbox" id="page-education" name="pages-visited" value="education">
-                    <label for="page-education">Education</label><br>
-                    
-                    <input type="checkbox" id="page-schedule" name="pages-visited" value="schedule">
-                    <label for="page-schedule">Weekly Schedule</label><br>
-                    
-                    <input type="checkbox" id="page-contact" name="pages-visited" value="contact">
-                    <label for="page-contact">Contact Me</label><br><br>
-                    
-                    <label for="rating">Overall rating of the website:</label>
-                    <select id="rating" name="rating">
-                        <option value="excellent">Excellent</option>
-                        <option value="good">Good</option>
-                        <option value="average">Average</option>
-                        <option value="poor">Poor</option>
-                    </select><br><br>
-                    
-                    <label for="improve">What could be improved?</label><br>
-                    <textarea id="improve" name="improve" rows="4" cols="50" placeholder="Your suggestions..."></textarea><br><br>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Additional Feedback</legend>
-                    
-                    <label for="frequency">How often do you visit personal websites like this?</label><br>
-                    <input type="range" id="frequency" name="frequency" min="1" max="5" list="freq-values">
-                    <datalist id="freq-values">
-                        <option value="1" label="Rarely"></option>
-                        <option value="2" label="Occasionally"></option>
-                        <option value="3" label="Sometimes"></option>
-                        <option value="4" label="Often"></option>
-                        <option value="5" label="Very Often"></option>
-                    </datalist><br><br>
-                    
-                    <label>Would you recommend this website to others?</label><br>
-                    <input type="radio" id="recommend-yes" name="recommend" value="yes">
-                    <label for="recommend-yes">Yes</label>
-                    
-                    <input type="radio" id="recommend-no" name="recommend" value="no">
-                    <label for="recommend-no">No</label>
-                    
-                    <input type="radio" id="recommend-maybe" name="recommend" value="maybe">
-                    <label for="recommend-maybe">Maybe</label><br><br>
-                    
-                    <label for="comments">Additional comments:</label><br>
-                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any other feedback..."></textarea><br><br>
-                </fieldset>
-                
-                <input type="submit" value="Submit Questionnaire">
-                <input type="reset" value="Clear Answers">
-            </form>
-        </section>
-    </main>
+  <main class="container my-4">
+    <h2 class="text-center">Website Feedback Questionnaire</h2>
+    <p class="text-center">Please take a few moments to complete this questionnaire. Your feedback is greatly appreciated! 🙏</p>
 
-    <footer>
-        <p>&copy; 2025 Raiq Abdurahmanli</p>
-    </footer>
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain" class="row g-3">
+      <div class="col-md-6">
+        <label for="q-name" class="form-label">Your Name (optional):</label>
+        <input type="text" class="form-control" id="q-name" name="q-name">
+      </div>
+
+      <div class="col-md-6">
+        <label for="q-email" class="form-label">Your Email (optional):</label>
+        <input type="email" class="form-control" id="q-email" name="q-email">
+      </div>
+
+      <div class="col-12">
+        <fieldset>
+          <legend>How did you find my website?</legend>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="find-search" name="how-found" value="search">
+            <label for="find-search" class="form-check-label">Search Engine</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="find-social" name="how-found" value="social">
+            <label for="find-social" class="form-check-label">Social Media</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="find-friend" name="how-found" value="friend">
+            <label for="find-friend" class="form-check-label">From a Friend</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="find-other" name="how-found" value="other">
+            <label for="find-other" class="form-check-label">Other</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="col-12">
+        <fieldset>
+          <legend>Website Evaluation</legend>
+          <div class="mb-2">
+            <label class="form-label">Is the website easy to navigate?</label><br>
+            <input type="radio" name="navigation" value="yes"> Yes
+            <input type="radio" name="navigation" value="no"> No
+          </div>
+
+          <label class="form-label">Which pages did you visit?</label><br>
+          <input type="checkbox" name="pages" value="home"> Home
+          <input type="checkbox" name="pages" value="education"> Education
+          <input type="checkbox" name="pages" value="schedule"> Schedule
+          <input type="checkbox" name="pages" value="contact"> Contact<br><br>
+
+          <label for="rating" class="form-label">Overall rating:</label>
+          <select id="rating" name="rating" class="form-select">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+          </select><br>
+
+          <label for="improve" class="form-label">What could be improved?</label>
+          <textarea id="improve" name="improve" class="form-control" rows="3" placeholder="Your suggestions..."></textarea>
+        </fieldset>
+      </div>
+
+      <div class="col-12">
+        <fieldset>
+          <legend>Additional Feedback</legend>
+          <label for="frequency" class="form-label">How often do you visit websites like this?</label>
+          <input type="range" class="form-range" id="frequency" name="frequency" min="1" max="5"><br>
+          <div class="d-flex justify-content-between" style="width: 100%;">
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+  <span>4</span>
+  <span>5</span>
+</div>
+<br>
+
+          <label class="form-label">Would you recommend this website?</label><br>
+          <input type="radio" name="recommend" value="yes"> Yes
+          <input type="radio" name="recommend" value="no"> No
+          <input type="radio" name="recommend" value="maybe"> Maybe<br><br>
+
+          <label for="comments" class="form-label">Additional comments:</label>
+          <textarea id="comments" name="comments" class="form-control" rows="3"></textarea>
+        </fieldset>
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-purple me-2">Submit Questionnaire</button>
+        <button type="reset" class="btn btn-secondary">Clear Answers</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="text-center mt-4">
+    <p>&copy; 2025 Raiq Abdurahmanli</p>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
